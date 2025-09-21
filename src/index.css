@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Cosmic Space Theme Design System 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Space Theme - Deep cosmic blacks and purples */
+    --background: 240 10% 3.9%;
+    --foreground: 280 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 10% 4.9%;
+    --card-foreground: 280 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 10% 4.9%;
+    --popover-foreground: 280 20% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cosmic Purple Primary */
+    --primary: 270 80% 60%;
+    --primary-foreground: 240 10% 3.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Dark Purple Secondary */
+    --secondary: 260 40% 15%;
+    --secondary-foreground: 280 20% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle space grays */
+    --muted: 240 10% 8%;
+    --muted-foreground: 280 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Purple accent */
+    --accent: 280 60% 25%;
+    --accent-foreground: 280 20% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 280 20% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: 270 80% 60%;
 
-    --radius: 0.5rem;
+    /* Cosmic Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(270 80% 60%), hsl(280 70% 45%), hsl(260 60% 35%));
+    --gradient-nebula: linear-gradient(90deg, hsl(270 80% 60%) 0%, hsl(280 70% 45%) 50%, hsl(260 60% 35%) 100%);
+    --gradient-space: linear-gradient(180deg, hsl(240 10% 3.9%) 0%, hsl(260 20% 8%) 100%);
+    
+    /* Glows and Effects */
+    --glow-purple: 0 0 40px hsla(270, 80%, 60%, 0.3);
+    --glow-subtle: 0 0 20px hsla(270, 80%, 60%, 0.1);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,42 +69,12 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Light mode uses same cosmic theme for consistency */
+  .light {
+    --background: 240 10% 3.9%;
+    --foreground: 280 20% 95%;
+    --card: 240 10% 4.9%;
+    --card-foreground: 280 20% 95%;
   }
 }
 
@@ -100,6 +84,82 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+    background-image: radial-gradient(circle at 20% 50%, hsla(270, 80%, 60%, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, hsla(280, 70%, 45%, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 40% 80%, hsla(260, 60%, 35%, 0.1) 0%, transparent 50%);
+  }
+}
+
+@layer components {
+  /* Cosmic Header Styles */
+  .cosmic-header {
+    background: var(--gradient-cosmic);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: cosmic-flow 8s ease-in-out infinite;
+  }
+  
+  .cosmic-glow {
+    box-shadow: var(--glow-purple);
+  }
+  
+  .cosmic-card {
+    background: linear-gradient(135deg, hsla(240, 10%, 4.9%, 0.8), hsla(260, 20%, 8%, 0.8));
+    border: 1px solid hsla(270, 80%, 60%, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .cosmic-button {
+    background: var(--gradient-cosmic);
+    transition: all 0.3s ease;
+  }
+  
+  .cosmic-button:hover {
+    box-shadow: var(--glow-purple);
+    transform: translateY(-2px);
+  }
+}
+
+@layer utilities {
+  .animate-cosmic-flow {
+    animation: cosmic-flow 8s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+}
+
+@keyframes cosmic-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsla(270, 80%, 60%, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsla(270, 80%, 60%, 0.6);
   }
 }
