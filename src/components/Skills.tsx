@@ -40,11 +40,11 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold cosmic-header mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold cosmic-header mb-6 relative z-10">
             Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto text-glow-subtle">
             A comprehensive toolkit for data analysis, machine learning, and software development
           </p>
         </div>

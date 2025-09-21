@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold cosmic-header mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold cosmic-header mb-6 relative z-10">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
@@ -15,7 +15,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Professional Summary */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-primary mb-4">
+            <h3 className="text-2xl font-semibold text-primary mb-4 text-glow-subtle">
               Professional Summary
             </h3>
             <p className="text-muted-foreground leading-relaxed text-lg">

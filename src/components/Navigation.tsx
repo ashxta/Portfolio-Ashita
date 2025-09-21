@@ -40,7 +40,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-2xl font-bold cosmic-header">
+          <div className="text-2xl font-bold cosmic-header relative z-10">
             ASHITA
           </div>
 

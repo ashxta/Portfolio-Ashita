@@ -14,17 +14,17 @@ const Hero = () => {
 
       <div className="text-center z-10 max-w-6xl mx-auto">
         {/* Main Header with Cosmic Gradient */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 cosmic-header">
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 cosmic-header relative z-10">
           ASHITA
         </h1>
         
         {/* Subtitle */}
-        <h2 className="text-2xl md:text-4xl font-semibold text-muted-foreground mb-8">
+        <h2 className="text-2xl md:text-4xl font-semibold text-muted-foreground mb-8 text-glow-subtle relative z-10">
           Data Analyst & AI Engineer
         </h2>
         
         {/* Professional Summary */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed text-glow-subtle relative z-10">
           Passionate about leveraging machine learning, data analytics, and digital transformation 
           to deliver impactful solutions. Experienced in Python, SQL, and Power BI with a focus on 
           aligning technical outcomes with business goals.
