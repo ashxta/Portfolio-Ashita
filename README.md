@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🌌 Ashita's Portfolio
 
-**URL**: https://lovable.dev/projects/137ae9b5-02c8-4398-9c7c-6b1743d00772
+This is a **portfolio website** for **Ashita**, a Data Analyst and AI Engineer.  
+The project is built with **Vite, TypeScript, React, shadcn-ui, and Tailwind CSS**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📖 About
 
-**Use Lovable**
+This portfolio showcases my skills and projects in **data analysis, machine learning, and software development**.  
+It features a **clean, modern design with a cosmic theme**, reflecting a passion for technology and innovation.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/137ae9b5-02c8-4398-9c7c-6b1743d00772) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- **Responsive Design** – Works seamlessly across all devices.  
+- **Interactive UI** – Includes smooth animations and hover effects.  
+- **Project Showcase** – Detailed project highlights with live demos & GitHub links.  
+- **Skills Overview** – Dedicated section for technical and soft skills.  
+- **Contact Form** – Functional form to connect with Ashita directly.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Technologies Used
 
-Follow these steps:
+- **Vite** – Fast build tool for modern web projects  
+- **TypeScript** – Typed superset of JavaScript  
+- **React** – Library for building interactive UIs  
+- **shadcn-ui** – Re-usable React components  
+- **Tailwind CSS** – Utility-first CSS framework for rapid styling  
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### ✅ Prerequisites
+Make sure you have **npm** installed:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm install npm@latest -g
 ```
 
-**Edit a file directly in GitHub**
+### ⚙️ Installation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ashxta/Portfolio-Ashita.git
+   ```
 
-**Use GitHub Codespaces**
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🤝 Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Contributions are always welcome!  
 
-## How can I deploy this project?
+If you have a suggestion, feel free to **fork the repo** and submit a **pull request**, or simply open an **issue** with the tag `"enhancement"`.
 
-Simply open [Lovable](https://lovable.dev/projects/137ae9b5-02c8-4398-9c7c-6b1743d00772) and click on Share -> Publish.
+Steps:
+1. Fork the project  
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your changes (`git commit -m "Add some AmazingFeature"`)  
+4. Push to the branch (`git push origin feature/AmazingFeature`)  
+5. Open a pull request  
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📜 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Distributed under the **MIT License**.  
+See `LICENSE` for more information.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 📬 Contact
+
+- **Portfolio:** [ashxta.dev](https://ashxta.dev)  
+- **Email:** eeshosingh@gmail.com  
+
+🔗 **Project Link:** [Portfolio-Ashita](https://github.com/ashxta/Portfolio-Ashita)
+
