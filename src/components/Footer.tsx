@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center mt-8 text-muted-foreground text-sm">
-          <p>&copy; 2024 Ashita. All rights reserved.</p>
+          <p>&copy; 2025 Ashita. All rights reserved.</p>
         </div>
       </div>
     </footer>
