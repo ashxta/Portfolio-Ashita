@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, TrendingUp, Shield, BarChart, Clock } from "lucide-react";
+import { ExternalLink, Github, TrendingUp, Shield, BarChart, Clock, Bot } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -14,7 +14,9 @@ const Projects = () => {
         "Implemented dynamic prioritization with a 5-star rating system",
         "Ensured user progress is retained using local persistence with localStorage"
       ],
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/ashxta/Deadlinely",
+      demo: "https://deadlinely.vercel.app/"
     },
     {
       icon: TrendingUp,
@@ -38,7 +40,21 @@ const Projects = () => {
         "Designing real-time content analysis workflows",
         "Building educational insights on manipulative patterns to strengthen media literacy"
       ],
-      status: "Ongoing"
+      status: "Ongoing",
+      demo: "https://truthguard-controllers.vercel.app/"
+    },
+    {
+        icon: Bot,
+        title: "AI Powered Data Analyzer",
+        description: "Built an interactive dashboard automating data cleaning, visualization, and summarization, reducing reporting effort by 60%.",
+        technologies: ["Streamlit", "Hugging Face Zephyr", "Python"],
+        achievements: [
+            "Integrated a large language model API to generate data-driven insights",
+            "Demonstrated ability to learn and apply new tools quickly"
+        ],
+        status: "Completed",
+        github: "https://github.com/ashxta/AI-Data-Analyzer",
+        demo: "https://ai-data-insight.streamlit.app/"
     },
     {
       icon: BarChart,
@@ -128,14 +144,18 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-3 pt-4">
-                    <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
-                    </Button>
+                    {project.github && <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <a href={project.github} target="_blank" rel="noreferrer noopener">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>}
+                    {project.demo && <Button asChild variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                      <a href={project.demo} target="_blank" rel="noreferrer noopener">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </a>
+                    </Button>}
                   </div>
                 </div>
               </div>
