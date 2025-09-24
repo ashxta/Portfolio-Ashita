@@ -6,32 +6,27 @@ const Skills = () => {
     {
       icon: Code,
       title: "Languages & Tools",
-      skills: ["Python", "C/C++", "SQL", "JavaScript", "React", "NodeJS"]
-    },
-    {
-      icon: Database,
-      title: "Data & Analytics",
-      skills: ["MySQL", "Power BI", "Excel", "Data Cleaning", "KPI Tracking", "Risk Analysis"]
-    },
-    {
-      icon: Brain,
-      title: "Machine Learning",
-      skills: ["Scikit-learn", "TensorFlow", "Pandas", "Classification", "Clustering", "Predictive Models"]
+      skills: ["Python", "C/C++", "SQL", "Javascript", "HTML", "CSS"]
     },
     {
       icon: Cloud,
-      title: "Frameworks & Platforms",
-      skills: ["Google Cloud", "Streamlit", "REST APIs", "Git", "Docker", "DevOps"]
+      title: "Frameworks and Tools",
+      skills: ["Streamlit", "REST APIs", "Git", "MySQL", "Power BI", "Excel", "DevOps"]
     },
     {
-      icon: BarChart3,
-      title: "Development Tools",
-      skills: ["Jupyter", "GitHub", "VS Code", "Google Colab", "IDLE", "Matplotlib"]
+      icon: Database,
+      title: "Data Handling",
+      skills: ["MySQL", "Data Cleaning", "Preprocessing", "KPI Tracking", "Risk Analysis", "Object-Oriented Design"]
     },
     {
       icon: Users,
       title: "Soft Skills",
-      skills: ["Client Collaboration", "Critical Thinking", "Public Speaking", "Stakeholder Engagement"]
+      skills: ["Client Collaboration", "Critical Thinking", "Public Speaking", "Insight Presentation", "Stakeholder Engagement"]
+    },
+    {
+      icon: BarChart3,
+      title: "Platforms",
+      skills: ["Jupyter", "GitHub", "IDLE", "Google Colab", "VS Code", "Docker"]
     }
   ];
 
@@ -77,7 +72,7 @@ const Skills = () => {
           <Card className="cosmic-card p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-semibold text-primary mb-6">Core Technology Stack</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              {["Python", "SQL", "Power BI", "Machine Learning", "React", "Google Cloud", "Git", "Docker"].map((tech, index) => (
+              {["Python", "C/C++", "SQL", "Javascript", "React", "NodeJS", "MySQL", "Power BI", "Git", "Docker", "Google Cloud"].map((tech, index) => (
                 <span 
                   key={index}
                   className="px-4 py-2 bg-primary/20 text-primary rounded-full border border-primary/30 hover:bg-primary/30 transition-colors duration-300"
