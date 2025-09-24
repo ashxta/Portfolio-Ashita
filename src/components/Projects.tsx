@@ -1,9 +1,21 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, TrendingUp, Shield, BarChart } from "lucide-react";
+import { ExternalLink, Github, TrendingUp, Shield, BarChart, Clock } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      icon: Clock,
+      title: "Deadlinely - AI Task Manager",
+      description: "Built an AI-powered productivity app that auto-generates optimized schedules using task priorities, deadlines, and estimated times.",
+      technologies: ["React", "Tailwind CSS", "TypeScript"],
+      achievements: [
+        "Designed a cyberpunk-inspired, responsive UI with shadcn/ui and smooth animations",
+        "Implemented dynamic prioritization with a 5-star rating system",
+        "Ensured user progress is retained using local persistence with localStorage"
+      ],
+      status: "Completed"
+    },
     {
       icon: TrendingUp,
       title: "HR Data Analysis & Attrition Prediction",
@@ -71,8 +83,8 @@ const Projects = () => {
                       <div className="flex items-center space-x-3 mb-2">
                         <h3 className="text-2xl font-semibold text-primary">{project.title}</h3>
                         <span className={`px-3 py-1 rounded-full text-sm ${
-                          project.status === 'Ongoing' 
-                            ? 'bg-accent/20 text-accent' 
+                          project.status === 'Ongoing'
+                            ? 'bg-accent/20 text-accent'
                             : 'bg-primary/20 text-primary'
                         }`}>
                           {project.status}
@@ -89,7 +101,7 @@ const Projects = () => {
                     <h4 className="text-lg font-semibold text-primary mb-3">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
-                        <span 
+                        <span
                           key={techIndex}
                           className="px-3 py-1 bg-secondary/30 text-secondary-foreground rounded-full border border-secondary/50 text-sm"
                         >
