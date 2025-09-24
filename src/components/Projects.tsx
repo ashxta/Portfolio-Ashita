@@ -28,7 +28,8 @@ const Projects = () => {
         "Delivered department-level risk analysis and predictive alert systems",
         "Supported workforce planning with data-driven insights"
       ],
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/ashxta/HR-Data-Analytics-ML"
     },
     {
       icon: Shield,
@@ -66,7 +67,8 @@ const Projects = () => {
         "Built executive-level dashboards for senior decision-makers",
         "Enhanced customer engagement through data-driven recommendations"
       ],
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/ashxta/Netflix-Data-Analysis"
     }
   ];
 
