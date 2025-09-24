@@ -19,13 +19,18 @@ const Hero = () => {
         </h1>
         
         {/* Subtitle */}
-        <h2 className="text-2xl md:text-4xl font-semibold text-muted-foreground mb-8 text-glow-subtle relative z-10">
-          Data Analyst & AI Engineer
+        <h2 className="text-2xl md:text-4xl font-semibold text-muted-foreground mb-4 text-glow-subtle relative z-10">
+          Analyst & ML Engineer
         </h2>
+        
+        {/* Location */}
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 relative z-10">
+          Gurugram, Haryana
+        </p>
         
         {/* Professional Summary */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed text-glow-subtle relative z-10">
-          Passionate about leveraging machine learning, data analytics, and digital transformation 
+          Passionate about leveraging DevOps, machine learning, data analytics and.artificial intelligence transformation 
           to deliver impactful solutions. Experienced in Python, SQL, and Power BI with a focus on 
           aligning technical outcomes with business goals.
         </p>
@@ -36,10 +41,12 @@ const Hero = () => {
             <Mail className="mr-2 h-5 w-5" />
             Get In Touch
           </Button>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg">
-            <Download className="mr-2 h-5 w-5" />
-            Download Resume
-          </Button>
+          <a href="https://drive.google.com/file/d/1wHupso6b6zQqEHiS3TfuSZ0mraVytF4F/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg">
+              <Download className="mr-2 h-5 w-5" />
+              Download Resume
+            </Button>
+          </a>
         </div>
 
         {/* Social Links */}
