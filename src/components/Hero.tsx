@@ -51,15 +51,21 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-8">
-          <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
-            <Github className="h-6 w-6 text-primary" />
-          </button>
-          <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
-            <Linkedin className="h-6 w-6 text-primary" />
-          </button>
-          <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
-            <Mail className="h-6 w-6 text-primary" />
-          </button>
+          <a href="https://github.com/ashxta" target="_blank" rel="noopener noreferrer">
+            <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
+              <Github className="h-6 w-6 text-primary" />
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/ashita-a-602001282/" target="_blank" rel="noopener noreferrer">
+            <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
+              <Linkedin className="h-6 w-6 text-primary" />
+            </button>
+          </a>
+          <a href="mailto:eeshosingh@gmail.com">
+            <button className="p-3 rounded-full border border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110">
+              <Mail className="h-6 w-6 text-primary" />
+            </button>
+          </a>
         </div>
 
         {/* Scroll Indicator */}
