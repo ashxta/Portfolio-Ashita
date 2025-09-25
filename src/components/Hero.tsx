@@ -41,7 +41,7 @@ const Hero = () => {
             <Mail className="mr-2 h-5 w-5" />
             Get In Touch
           </Button>
-          <a href="https://drive.google.com/file/d/1nz2Ddtab4aF-FLnUIt7Z2zk0Fzdk856X/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1uN2FVbMuuMo63qRFRAxvX8TpG4VbZ-xs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg">
               <Download className="mr-2 h-5 w-5" />
               Download Resume
