@@ -53,15 +53,21 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-4">
-            <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
-              <Github className="h-5 w-5 text-primary hover:text-primary-foreground" />
-            </button>
-            <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
-              <Linkedin className="h-5 w-5 text-primary hover:text-primary-foreground" />
-            </button>
-            <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
-              <Mail className="h-5 w-5 text-primary hover:text-primary-foreground" />
-            </button>
+            <a href="https://github.com/ashxta" target="_blank" rel="noopener noreferrer">
+              <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
+                <Github className="h-5 w-5 text-primary hover:text-primary-foreground" />
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/ashita-a-602001282/" target="_blank" rel="noopener noreferrer">
+              <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
+                <Linkedin className="h-5 w-5 text-primary hover:text-primary-foreground" />
+              </button>
+            </a>
+            <a href="mailto:eeshosingh@gmail.com">
+              <button className="p-2 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110">
+                <Mail className="h-5 w-5 text-primary hover:text-primary-foreground" />
+              </button>
+            </a>
           </div>
         </div>
 
