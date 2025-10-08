@@ -10,7 +10,7 @@ const Skills = () => {
     },
     {
       icon: Database,
-      title: "Data & Analytics",
+      title: "Data Analytics",
       skills: ["MySQL", "Power BI", "Excel", "Data Cleaning", "KPI Tracking", "Risk Analysis"]
     },
     {
