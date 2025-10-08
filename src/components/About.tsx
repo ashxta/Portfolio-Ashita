@@ -19,7 +19,7 @@ const About = () => {
               Professional Summary
             </h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Analyst with expertise in artificial intelligent, DevOps, machine learning, basic cloud and software engineering.
+              Analyst with expertise in artificial intelligence, DevOps, machine learning, basic software engineering.
               I specialize in aligning technical outcomes with business goals using Python, SQL, Power BI, and 
               consulting workflows.
             </p>
